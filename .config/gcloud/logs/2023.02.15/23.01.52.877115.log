@@ -1,0 +1,17 @@
+2023-02-15 23:01:52,883 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
+2023-02-15 23:01:52,886 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters', 'get_credentials']
+2023-02-15 23:01:52,912 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2023-02-15 23:01:52,913 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2023-02-15 23:01:53,063 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2023-02-15 23:01:53,098 DEBUG    root            Running [gcloud.container.clusters.get-credentials] with arguments: [--project: "gke-app-376315", --zone: "asia-southeast1-a", NAME: "gke-app"]
+2023-02-15 23:01:53,102 INFO     ___FILE_ONLY___ Fetching cluster endpoint and auth data.
+
+2023-02-15 23:01:53,104 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-02-15 23:01:53,262 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/gke-app-376315/locations/asia-southeast1-a/clusters/gke-app?alt=json HTTP/1.1" 200 None
+2023-02-15 23:01:53,268 WARNING  root            cluster gke-app is not RUNNING. The kubernetes API may or may not be available. Check the cluster status for more information.
+2023-02-15 23:01:53,372 DEBUG    root            Saved kubeconfig to /home/dar/.kube/config
+2023-02-15 23:01:53,373 INFO     ___FILE_ONLY___ kubeconfig entry generated for gke-app.
+
+2023-02-15 23:01:53,373 DEBUG    root            Chosen display Format:default
+2023-02-15 23:01:53,374 INFO     root            Display format: "default"
+2023-02-15 23:01:53,378 DEBUG    root            Metrics reporting process started...

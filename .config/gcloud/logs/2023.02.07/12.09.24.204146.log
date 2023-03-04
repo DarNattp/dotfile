@@ -1,0 +1,35 @@
+2023-02-07 12:09:24,206 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2023-02-07 12:09:24,209 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'config_helper']
+2023-02-07 12:09:24,211 DEBUG    root            Running [gcloud.config.config-helper] with arguments: [--format: "json"]
+2023-02-07 12:09:24,242 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2023-02-07 12:09:24,244 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2023-02-07 12:09:24,400 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2023-02-07 12:09:24,409 DEBUG    root            Chosen display Format:default json
+2023-02-07 12:09:24,409 INFO     root            Display format: "default json"
+2023-02-07 12:09:24,410 INFO     ___FILE_ONLY___ {
+  "configuration": {
+    "active_configuration": "default",
+    "properties": {
+      "compute": {
+        "region": "asia-southeast1",
+        "zone": "asia-southeast1-a"
+      },
+      "core": {
+        "account": "natapat.pims@gmail.com",
+        "disable_usage_reporting": "False",
+        "project": "gke-app-376315"
+      }
+    }
+  },
+  "credential": {
+    "access_token": "ya29.a0AVvZVsqH9uUvfcfoXfXGReADXjc1HWG8NTmW9v6PiYpYHAL-8N5y4NoD_x9XpO45dtDHkjUNDtbeP6MNj3TLNwzdjF7MdEKquagUGhRxAvoegunfFP7JWzTbUDu1ykh5qBuIVqQivW1X_CR2Bs2LcfIFcIzK1XCnLdYSpgaCgYKARgSAQASFQGbdwaIuaD-U-B23kY2y93C_lp4QQ0173",
+    "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjI3NDA1MmEyYjY0NDg3NDU3NjRlNzJjMzU5MDk3MWQ5MGNmYjU4NWEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzMjU1NTk0MDU1OS5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImF1ZCI6IjMyNTU1OTQwNTU5LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTE1ODQ3Mjk4NjgyNTQ2MDY3OTk2IiwiZW1haWwiOiJuYXRhcGF0LnBpbXNAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJsOFRMTDlqZThmYnNnSmhzMVhyLUlnIiwiaWF0IjoxNjc1NzQ2NTYzLCJleHAiOjE2NzU3NTAxNjN9.MvU-ZixMuIGRdgZVbQ1fHqb9pq0rEUl8kdUttsCmhW39CVY5lkh6itZ40MLhS1_zJPkaT997jlQpizDUCWjA1cICB03TXG6L5313ES37PYoxamXleZpTiQb8i8i_2D8LRYfXD1FPRNcaGS84H66HCNa3GO-RRwRLRt_OkvuDso7RoBsk-z5iVidR1qmJ5DonZBiQYNAEJqEBjbYh0xyS_w-9rzCAxxId5zpKbT9JPAb8N_EXjOqiZXwKPA0dyoAu8YIaB1F1ttmODpndw0731QUSeiMkwc2Oj5nQrTg537e1kQz6uhA0GlX8gUr2nfiByq-2IrbejtG2Ek4JVvwvRw",
+    "token_expiry": "2023-02-07T06:09:23Z"
+  },
+  "sentinels": {
+    "config_sentinel": "/home/dar/.config/gcloud/config_sentinel"
+  }
+}
+2023-02-07 12:09:24,410 INFO     ___FILE_ONLY___ 
+
+2023-02-07 12:09:24,416 DEBUG    root            Metrics reporting process started...

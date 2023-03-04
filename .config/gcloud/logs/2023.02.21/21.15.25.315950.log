@@ -1,0 +1,32 @@
+2023-02-21 21:15:25,317 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2023-02-21 21:15:25,318 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'config_helper']
+2023-02-21 21:15:25,319 DEBUG    root            Running [gcloud.config.config-helper] with arguments: [--format: "json"]
+2023-02-21 21:15:25,323 DEBUG    root            Chosen display Format:default json
+2023-02-21 21:15:25,323 INFO     root            Display format: "default json"
+2023-02-21 21:15:25,324 INFO     ___FILE_ONLY___ {
+  "configuration": {
+    "active_configuration": "default",
+    "properties": {
+      "compute": {
+        "region": "asia-southeast1",
+        "zone": "asia-southeast1-a"
+      },
+      "core": {
+        "account": "natapat.pims@gmail.com",
+        "disable_usage_reporting": "False",
+        "project": "gke-app-376315"
+      }
+    }
+  },
+  "credential": {
+    "access_token": "ya29.a0AVvZVsrHev9JHVsybh8-9aUQNsDUzOL4HOL0o7ayznBzKXMQChHG0ZihwSsjdmA4obYXVlZGLgqettYfDts6ydOoZVSxb5rGYXVoVB0LCrQXnYMPqtE8ODi7hdW1M-skv6Rg7NCLMyWZKselzqVF81sIWVXmvY2K_aRpLQaCgYKAcISAQASFQGbdwaIjdn290krTzuFMWwo4Dr68A0173",
+    "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjU5NjJlN2EwNTljN2Y1YzBjMGQ1NmNiYWQ1MWZlNjRjZWVjYTY3YzYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzMjU1NTk0MDU1OS5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImF1ZCI6IjMyNTU1OTQwNTU5LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTE1ODQ3Mjk4NjgyNTQ2MDY3OTk2IiwiZW1haWwiOiJuYXRhcGF0LnBpbXNAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJlcmthTVRMZDQ0UC1aOTRTLVVVYkRRIiwiaWF0IjoxNjc2OTg4OTI1LCJleHAiOjE2NzY5OTI1MjV9.fvLNclyEaW5-kC5VJzncUP4fDoQGwl-IaX_iADDow4Bw_ktwnHJ0sLIXrmtuWwqQGBAyu1g3qlWSwqQeKY9rYBIZdThWKEq0Lu8zmsxAYjzyh1-yNuQA6wh2usrPfzz3yaz2l9n-6hWQXZyZ0ygsR3lQYNpES1B4op420MOyjZQNfHgh9AVvB95GfZvhgGOPFYlbVMkEgqAb9HBA-VeHlWWGwCwop1by-GrifsDBJoIlZEw8VsSTcluqI0gfU9E9ZO_STvbJovtOnwNBHK1m7acM7lw7QHyGqrDMBm-3PnCCaJX2K2NHqQ1OPME1gGoqJ_lNPtuDirt8vb6Rnqt9fA",
+    "token_expiry": "2023-02-21T15:15:22Z"
+  },
+  "sentinels": {
+    "config_sentinel": "/home/dar/.config/gcloud/config_sentinel"
+  }
+}
+2023-02-21 21:15:25,324 INFO     ___FILE_ONLY___ 
+
+2023-02-21 21:15:25,327 DEBUG    root            Metrics reporting process started...

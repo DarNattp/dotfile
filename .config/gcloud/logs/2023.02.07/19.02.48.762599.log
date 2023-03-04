@@ -1,0 +1,12 @@
+2023-02-07 19:02:48,763 DEBUG    root            Loaded Command Group: ['gcloud', 'iam']
+2023-02-07 19:02:48,764 DEBUG    root            Loaded Command Group: ['gcloud', 'iam', 'service_accounts']
+2023-02-07 19:02:48,765 DEBUG    root            Loaded Command Group: ['gcloud', 'iam', 'service-accounts', 'keys']
+2023-02-07 19:02:48,768 DEBUG    root            Loaded Command Group: ['gcloud', 'iam', 'service-accounts', 'keys', 'create']
+2023-02-07 19:02:48,770 DEBUG    root            Running [gcloud.iam.service-accounts.keys.create] with arguments: [--iam-account: "dns01-solver@gke-app-376315.iam.gserviceaccount.com", OUTPUT-FILE: "key.json"]
+2023-02-07 19:02:48,777 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2023-02-07 19:02:50,545 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/projects/-/serviceAccounts/dns01-solver@gke-app-376315.iam.gserviceaccount.com/keys?alt=json HTTP/1.1" 200 None
+2023-02-07 19:02:50,547 INFO     ___FILE_ONLY___ created key [e90e44dbde5318eba6fa32adb298956899bc38a9] of type [json] as [key.json] for [dns01-solver@gke-app-376315.iam.gserviceaccount.com]
+
+2023-02-07 19:02:50,548 DEBUG    root            Chosen display Format:default
+2023-02-07 19:02:50,548 INFO     root            Display format: "default"
+2023-02-07 19:02:50,553 DEBUG    root            Metrics reporting process started...

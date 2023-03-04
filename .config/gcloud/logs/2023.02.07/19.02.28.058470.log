@@ -1,0 +1,167 @@
+2023-02-07 19:02:28,058 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2023-02-07 19:02:28,072 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'add_iam_policy_binding']
+2023-02-07 19:02:28,073 DEBUG    root            Running [gcloud.projects.add-iam-policy-binding] with arguments: [--member: "serviceAccount:dns01-solver@gke-app-376315.iam.gserviceaccount.com", --role: "roles/dns.admin", PROJECT_ID: "gke-app-376315"]
+2023-02-07 19:02:28,082 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2023-02-07 19:02:29,327 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "POST /v1/projects/gke-app-376315:getIamPolicy?alt=json HTTP/1.1" 200 None
+2023-02-07 19:02:29,334 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2023-02-07 19:02:31,193 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "POST /v1/projects/gke-app-376315:setIamPolicy?alt=json HTTP/1.1" 200 None
+2023-02-07 19:02:31,195 INFO     ___FILE_ONLY___ Updated IAM policy for project [gke-app-376315].
+
+2023-02-07 19:02:31,195 DEBUG    root            Chosen display Format:default
+2023-02-07 19:02:31,196 INFO     root            Display format: "default"
+2023-02-07 19:02:31,197 INFO     ___FILE_ONLY___ bindings
+2023-02-07 19:02:31,197 INFO     ___FILE_ONLY___ :
+2023-02-07 19:02:31,197 INFO     ___FILE_ONLY___ 
+
+2023-02-07 19:02:31,197 INFO     ___FILE_ONLY___ -
+2023-02-07 19:02:31,197 INFO     ___FILE_ONLY___  
+2023-02-07 19:02:31,197 INFO     ___FILE_ONLY___ members
+2023-02-07 19:02:31,197 INFO     ___FILE_ONLY___ :
+2023-02-07 19:02:31,197 INFO     ___FILE_ONLY___ 
+
+2023-02-07 19:02:31,198 INFO     ___FILE_ONLY___   
+2023-02-07 19:02:31,198 INFO     ___FILE_ONLY___ -
+2023-02-07 19:02:31,198 INFO     ___FILE_ONLY___  
+2023-02-07 19:02:31,198 INFO     ___FILE_ONLY___ serviceAccount:service-658228464898@compute-system.iam.gserviceaccount.com
+2023-02-07 19:02:31,198 INFO     ___FILE_ONLY___ 
+
+2023-02-07 19:02:31,198 INFO     ___FILE_ONLY___   
+2023-02-07 19:02:31,198 INFO     ___FILE_ONLY___ role
+2023-02-07 19:02:31,198 INFO     ___FILE_ONLY___ :
+2023-02-07 19:02:31,198 INFO     ___FILE_ONLY___  
+2023-02-07 19:02:31,198 INFO     ___FILE_ONLY___ roles/compute.serviceAgent
+2023-02-07 19:02:31,198 INFO     ___FILE_ONLY___ 
+
+2023-02-07 19:02:31,198 INFO     ___FILE_ONLY___ -
+2023-02-07 19:02:31,198 INFO     ___FILE_ONLY___  
+2023-02-07 19:02:31,199 INFO     ___FILE_ONLY___ members
+2023-02-07 19:02:31,199 INFO     ___FILE_ONLY___ :
+2023-02-07 19:02:31,199 INFO     ___FILE_ONLY___ 
+
+2023-02-07 19:02:31,199 INFO     ___FILE_ONLY___   
+2023-02-07 19:02:31,199 INFO     ___FILE_ONLY___ -
+2023-02-07 19:02:31,199 INFO     ___FILE_ONLY___  
+2023-02-07 19:02:31,199 INFO     ___FILE_ONLY___ serviceAccount:service-658228464898@container-engine-robot.iam.gserviceaccount.com
+2023-02-07 19:02:31,199 INFO     ___FILE_ONLY___ 
+
+2023-02-07 19:02:31,199 INFO     ___FILE_ONLY___   
+2023-02-07 19:02:31,199 INFO     ___FILE_ONLY___ role
+2023-02-07 19:02:31,199 INFO     ___FILE_ONLY___ :
+2023-02-07 19:02:31,199 INFO     ___FILE_ONLY___  
+2023-02-07 19:02:31,199 INFO     ___FILE_ONLY___ roles/container.serviceAgent
+2023-02-07 19:02:31,199 INFO     ___FILE_ONLY___ 
+
+2023-02-07 19:02:31,200 INFO     ___FILE_ONLY___ -
+2023-02-07 19:02:31,200 INFO     ___FILE_ONLY___  
+2023-02-07 19:02:31,200 INFO     ___FILE_ONLY___ members
+2023-02-07 19:02:31,200 INFO     ___FILE_ONLY___ :
+2023-02-07 19:02:31,200 INFO     ___FILE_ONLY___ 
+
+2023-02-07 19:02:31,200 INFO     ___FILE_ONLY___   
+2023-02-07 19:02:31,200 INFO     ___FILE_ONLY___ -
+2023-02-07 19:02:31,200 INFO     ___FILE_ONLY___  
+2023-02-07 19:02:31,200 INFO     ___FILE_ONLY___ serviceAccount:service-658228464898@containerregistry.iam.gserviceaccount.com
+2023-02-07 19:02:31,200 INFO     ___FILE_ONLY___ 
+
+2023-02-07 19:02:31,200 INFO     ___FILE_ONLY___   
+2023-02-07 19:02:31,200 INFO     ___FILE_ONLY___ role
+2023-02-07 19:02:31,200 INFO     ___FILE_ONLY___ :
+2023-02-07 19:02:31,201 INFO     ___FILE_ONLY___  
+2023-02-07 19:02:31,201 INFO     ___FILE_ONLY___ roles/containerregistry.ServiceAgent
+2023-02-07 19:02:31,201 INFO     ___FILE_ONLY___ 
+
+2023-02-07 19:02:31,201 INFO     ___FILE_ONLY___ -
+2023-02-07 19:02:31,201 INFO     ___FILE_ONLY___  
+2023-02-07 19:02:31,201 INFO     ___FILE_ONLY___ members
+2023-02-07 19:02:31,201 INFO     ___FILE_ONLY___ :
+2023-02-07 19:02:31,201 INFO     ___FILE_ONLY___ 
+
+2023-02-07 19:02:31,201 INFO     ___FILE_ONLY___   
+2023-02-07 19:02:31,201 INFO     ___FILE_ONLY___ -
+2023-02-07 19:02:31,201 INFO     ___FILE_ONLY___  
+2023-02-07 19:02:31,201 INFO     ___FILE_ONLY___ serviceAccount:dns01-solver@gke-app-376315.iam.gserviceaccount.com
+2023-02-07 19:02:31,201 INFO     ___FILE_ONLY___ 
+
+2023-02-07 19:02:31,201 INFO     ___FILE_ONLY___   
+2023-02-07 19:02:31,202 INFO     ___FILE_ONLY___ role
+2023-02-07 19:02:31,202 INFO     ___FILE_ONLY___ :
+2023-02-07 19:02:31,202 INFO     ___FILE_ONLY___  
+2023-02-07 19:02:31,202 INFO     ___FILE_ONLY___ roles/dns.admin
+2023-02-07 19:02:31,202 INFO     ___FILE_ONLY___ 
+
+2023-02-07 19:02:31,202 INFO     ___FILE_ONLY___ -
+2023-02-07 19:02:31,202 INFO     ___FILE_ONLY___  
+2023-02-07 19:02:31,202 INFO     ___FILE_ONLY___ members
+2023-02-07 19:02:31,202 INFO     ___FILE_ONLY___ :
+2023-02-07 19:02:31,202 INFO     ___FILE_ONLY___ 
+
+2023-02-07 19:02:31,202 INFO     ___FILE_ONLY___   
+2023-02-07 19:02:31,202 INFO     ___FILE_ONLY___ -
+2023-02-07 19:02:31,202 INFO     ___FILE_ONLY___  
+2023-02-07 19:02:31,202 INFO     ___FILE_ONLY___ serviceAccount:658228464898-compute@developer.gserviceaccount.com
+2023-02-07 19:02:31,203 INFO     ___FILE_ONLY___ 
+
+2023-02-07 19:02:31,203 INFO     ___FILE_ONLY___   
+2023-02-07 19:02:31,203 INFO     ___FILE_ONLY___ -
+2023-02-07 19:02:31,203 INFO     ___FILE_ONLY___  
+2023-02-07 19:02:31,203 INFO     ___FILE_ONLY___ serviceAccount:658228464898@cloudservices.gserviceaccount.com
+2023-02-07 19:02:31,203 INFO     ___FILE_ONLY___ 
+
+2023-02-07 19:02:31,203 INFO     ___FILE_ONLY___   
+2023-02-07 19:02:31,203 INFO     ___FILE_ONLY___ role
+2023-02-07 19:02:31,203 INFO     ___FILE_ONLY___ :
+2023-02-07 19:02:31,203 INFO     ___FILE_ONLY___  
+2023-02-07 19:02:31,203 INFO     ___FILE_ONLY___ roles/editor
+2023-02-07 19:02:31,203 INFO     ___FILE_ONLY___ 
+
+2023-02-07 19:02:31,203 INFO     ___FILE_ONLY___ -
+2023-02-07 19:02:31,204 INFO     ___FILE_ONLY___  
+2023-02-07 19:02:31,204 INFO     ___FILE_ONLY___ members
+2023-02-07 19:02:31,204 INFO     ___FILE_ONLY___ :
+2023-02-07 19:02:31,204 INFO     ___FILE_ONLY___ 
+
+2023-02-07 19:02:31,204 INFO     ___FILE_ONLY___   
+2023-02-07 19:02:31,204 INFO     ___FILE_ONLY___ -
+2023-02-07 19:02:31,204 INFO     ___FILE_ONLY___  
+2023-02-07 19:02:31,204 INFO     ___FILE_ONLY___ user:natapat.pims@gmail.com
+2023-02-07 19:02:31,204 INFO     ___FILE_ONLY___ 
+
+2023-02-07 19:02:31,204 INFO     ___FILE_ONLY___   
+2023-02-07 19:02:31,204 INFO     ___FILE_ONLY___ role
+2023-02-07 19:02:31,204 INFO     ___FILE_ONLY___ :
+2023-02-07 19:02:31,204 INFO     ___FILE_ONLY___  
+2023-02-07 19:02:31,204 INFO     ___FILE_ONLY___ roles/owner
+2023-02-07 19:02:31,205 INFO     ___FILE_ONLY___ 
+
+2023-02-07 19:02:31,205 INFO     ___FILE_ONLY___ -
+2023-02-07 19:02:31,205 INFO     ___FILE_ONLY___  
+2023-02-07 19:02:31,205 INFO     ___FILE_ONLY___ members
+2023-02-07 19:02:31,205 INFO     ___FILE_ONLY___ :
+2023-02-07 19:02:31,205 INFO     ___FILE_ONLY___ 
+
+2023-02-07 19:02:31,205 INFO     ___FILE_ONLY___   
+2023-02-07 19:02:31,205 INFO     ___FILE_ONLY___ -
+2023-02-07 19:02:31,205 INFO     ___FILE_ONLY___  
+2023-02-07 19:02:31,205 INFO     ___FILE_ONLY___ serviceAccount:service-658228464898@gcp-sa-pubsub.iam.gserviceaccount.com
+2023-02-07 19:02:31,205 INFO     ___FILE_ONLY___ 
+
+2023-02-07 19:02:31,205 INFO     ___FILE_ONLY___   
+2023-02-07 19:02:31,205 INFO     ___FILE_ONLY___ role
+2023-02-07 19:02:31,205 INFO     ___FILE_ONLY___ :
+2023-02-07 19:02:31,205 INFO     ___FILE_ONLY___  
+2023-02-07 19:02:31,206 INFO     ___FILE_ONLY___ roles/pubsub.serviceAgent
+2023-02-07 19:02:31,206 INFO     ___FILE_ONLY___ 
+
+2023-02-07 19:02:31,206 INFO     ___FILE_ONLY___ etag
+2023-02-07 19:02:31,206 INFO     ___FILE_ONLY___ :
+2023-02-07 19:02:31,206 INFO     ___FILE_ONLY___  
+2023-02-07 19:02:31,206 INFO     ___FILE_ONLY___ BwX0GuwYGj0=
+2023-02-07 19:02:31,206 INFO     ___FILE_ONLY___ 
+
+2023-02-07 19:02:31,206 INFO     ___FILE_ONLY___ version
+2023-02-07 19:02:31,206 INFO     ___FILE_ONLY___ :
+2023-02-07 19:02:31,206 INFO     ___FILE_ONLY___  
+2023-02-07 19:02:31,206 INFO     ___FILE_ONLY___ 1
+2023-02-07 19:02:31,206 INFO     ___FILE_ONLY___ 
+
+2023-02-07 19:02:31,211 DEBUG    root            Metrics reporting process started...

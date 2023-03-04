@@ -1,0 +1,26 @@
+2023-02-04 23:22:34,140 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
+2023-02-04 23:22:34,143 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters', 'get_credentials']
+2023-02-04 23:22:34,182 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2023-02-04 23:22:34,184 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2023-02-04 23:22:34,342 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2023-02-04 23:22:34,375 DEBUG    root            Running [gcloud.container.clusters.get-credentials] with arguments: [--project: "gke-app-376315", --zone: "asia-southeast1-b", NAME: "gke-app"]
+2023-02-04 23:22:34,386 INFO     ___FILE_ONLY___ Fetching cluster endpoint and auth data.
+
+2023-02-04 23:22:34,388 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-02-04 23:22:34,573 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/gke-app-376315/locations/asia-southeast1-b/clusters/gke-app?alt=json HTTP/1.1" 200 None
+2023-02-04 23:22:34,689 DEBUG    root            Saved kubeconfig to /home/dar/.kube/config
+2023-02-04 23:22:34,689 INFO     ___FILE_ONLY___ kubeconfig entry generated for gke-app.
+
+2023-02-04 23:22:34,690 DEBUG    root            Chosen display Format:default
+2023-02-04 23:22:34,691 INFO     root            Display format: "default"
+2023-02-04 23:22:34,692 DEBUG    root            Checking for updates...
+2023-02-04 23:22:34,694 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2023-02-04 23:22:34,824 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-2.json HTTP/1.1" 200 206155
+2023-02-04 23:22:34,968 INFO     ___FILE_ONLY___ 
+
+Updates are available for some Google Cloud CLI components.  To install them,
+please run:
+  $ gcloud components update
+
+
+2023-02-04 23:22:34,973 DEBUG    root            Metrics reporting process started...

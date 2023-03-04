@@ -1,0 +1,46 @@
+2023-03-02 13:39:09,590 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2023-03-02 13:39:09,592 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances']
+2023-03-02 13:39:09,598 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances', 'reset']
+2023-03-02 13:39:09,600 DEBUG    root            Running [gcloud.compute.instances.reset] with arguments: [INSTANCE_NAMES:1: "['gke-gke-app-general-1bc9e303-8oxf']"]
+2023-03-02 13:39:09,815 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2023-03-02 13:39:10,694 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2023-03-02 13:39:10,697 DEBUG    root            Operations to inspect: [<Operation
+ id: 8121206753782004321
+ insertTime: '2023-03-01T22:39:10.080-08:00'
+ kind: 'compute#operation'
+ name: 'operation-1677739149510-5f5e516084685-92d06f32-559b7ded'
+ operationType: 'reset'
+ progress: 0
+ selfLink: 'https://www.googleapis.com/compute/v1/projects/gke-app-376315/zones/asia-southeast1-a/operations/operation-1677739149510-5f5e516084685-92d06f32-559b7ded'
+ startTime: '2023-03-01T22:39:10.091-08:00'
+ status: StatusValueValuesEnum(RUNNING, 2)
+ targetId: 3752703213922583521
+ targetLink: 'https://www.googleapis.com/compute/v1/projects/gke-app-376315/zones/asia-southeast1-a/instances/gke-gke-app-general-1bc9e303-8oxf'
+ user: 'natapat.pims@gmail.com'
+ warnings: []
+ zone: 'https://www.googleapis.com/compute/v1/projects/gke-app-376315/zones/asia-southeast1-a'>]
+2023-03-02 13:39:10,699 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2023-03-02 13:39:13,653 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2023-03-02 13:39:13,656 DEBUG    root            Operations to inspect: [<Operation
+ endTime: '2023-03-01T22:39:13.031-08:00'
+ id: 8121206753782004321
+ insertTime: '2023-03-01T22:39:10.080-08:00'
+ kind: 'compute#operation'
+ name: 'operation-1677739149510-5f5e516084685-92d06f32-559b7ded'
+ operationType: 'reset'
+ progress: 100
+ selfLink: 'https://www.googleapis.com/compute/v1/projects/gke-app-376315/zones/asia-southeast1-a/operations/operation-1677739149510-5f5e516084685-92d06f32-559b7ded'
+ startTime: '2023-03-01T22:39:10.091-08:00'
+ status: StatusValueValuesEnum(DONE, 0)
+ targetId: 3752703213922583521
+ targetLink: 'https://www.googleapis.com/compute/v1/projects/gke-app-376315/zones/asia-southeast1-a/instances/gke-gke-app-general-1bc9e303-8oxf'
+ user: 'natapat.pims@gmail.com'
+ warnings: []
+ zone: 'https://www.googleapis.com/compute/v1/projects/gke-app-376315/zones/asia-southeast1-a'>]
+2023-03-02 13:39:13,656 INFO     ___FILE_ONLY___ Updated [https://www.googleapis.com/compute/v1/projects/gke-app-376315/zones/asia-southeast1-a/instances/gke-gke-app-general-1bc9e303-8oxf].
+
+2023-03-02 13:39:13,658 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2023-03-02 13:39:13,960 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2023-03-02 13:39:14,012 DEBUG    root            Chosen display Format:none
+2023-03-02 13:39:14,012 INFO     root            Display format: "none"
+2023-03-02 13:39:14,022 DEBUG    root            Metrics reporting process started...

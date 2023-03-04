@@ -1,0 +1,47 @@
+2023-03-02 13:36:28,679 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
+2023-03-02 13:36:28,681 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters', 'describe']
+2023-03-02 13:36:28,727 DEBUG    root            Running [gcloud.container.clusters.describe] with arguments: [NAME: "gke_gke-app-376315_asia-southeast1-a_gke-app"]
+2023-03-02 13:36:28,729 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-02 13:36:28,929 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/gke-app-376315/locations/asia-southeast1-a/clusters/gke_gke-app-376315_asia-southeast1-a_gke-app?alt=json HTTP/1.1" 404 None
+2023-03-02 13:36:28,933 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-03-02 13:36:29,474 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/gke-app-376315/locations/-/clusters?alt=json HTTP/1.1" 200 None
+2023-03-02 13:36:29,481 DEBUG    root            (gcloud.container.clusters.describe) ResponseError: code=404, message=Not found: projects/gke-app-376315/zones/asia-southeast1-a/clusters/gke_gke-app-376315_asia-southeast1-a_gke-app.
+No cluster named 'gke_gke-app-376315_asia-southeast1-a_gke-app' in gke-app-376315.
+Traceback (most recent call last):
+  File "/tmp/google-cloud-sdk/lib/googlecloudsdk/api_lib/container/api_adapter.py", line 1394, in GetCluster
+    return self.client.projects_locations_clusters.Get(
+  File "/tmp/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/container/v1/container_v1_client.py", line 547, in Get
+    return self._RunMethod(
+  File "/tmp/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 737, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+  File "/tmp/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 743, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+  File "/tmp/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 609, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+apitools.base.py.exceptions.HttpNotFoundError: HttpError accessing <https://container.googleapis.com/v1/projects/gke-app-376315/locations/asia-southeast1-a/clusters/gke_gke-app-376315_asia-southeast1-a_gke-app?alt=json>: response: <{'vary': 'Origin, X-Origin, Referer', 'content-type': 'application/json; charset=UTF-8', 'content-encoding': 'gzip', 'date': 'Thu, 02 Mar 2023 06:36:28 GMT', 'server': 'ESF', 'cache-control': 'private', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked', 'status': 404}>, content <{
+  "error": {
+    "code": 404,
+    "message": "Not found: projects/gke-app-376315/zones/asia-southeast1-a/clusters/gke_gke-app-376315_asia-southeast1-a_gke-app.",
+    "status": "NOT_FOUND"
+  }
+}
+>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/tmp/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/tmp/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 807, in Run
+    resources = command_instance.Run(args)
+  File "/tmp/google-cloud-sdk/lib/surface/container/clusters/describe.py", line 67, in Run
+    c = adapter.GetCluster(adapter.ParseCluster(args.name, location))
+  File "/tmp/google-cloud-sdk/lib/googlecloudsdk/api_lib/container/api_adapter.py", line 1401, in GetCluster
+    self.CheckClusterOtherZones(cluster_ref, api_error)
+  File "/tmp/google-cloud-sdk/lib/googlecloudsdk/api_lib/container/api_adapter.py", line 1472, in CheckClusterOtherZones
+    raise not_found_error
+googlecloudsdk.api_lib.container.util.Error: ResponseError: code=404, message=Not found: projects/gke-app-376315/zones/asia-southeast1-a/clusters/gke_gke-app-376315_asia-southeast1-a_gke-app.
+No cluster named 'gke_gke-app-376315_asia-southeast1-a_gke-app' in gke-app-376315.
+2023-03-02 13:36:29,491 ERROR    root            (gcloud.container.clusters.describe) ResponseError: code=404, message=Not found: projects/gke-app-376315/zones/asia-southeast1-a/clusters/gke_gke-app-376315_asia-southeast1-a_gke-app.
+No cluster named 'gke_gke-app-376315_asia-southeast1-a_gke-app' in gke-app-376315.
+2023-03-02 13:36:29,502 DEBUG    root            Metrics reporting process started...

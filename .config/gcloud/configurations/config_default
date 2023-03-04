@@ -1,0 +1,8 @@
+[core]
+account = natapat.pims@gmail.com
+project = gke-app-376315
+
+[compute]
+zone = asia-southeast1-a
+region = asia-southeast1
+

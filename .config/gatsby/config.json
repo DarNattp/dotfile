@@ -1,0 +1,12 @@
+{
+	"telemetry": {
+		"machineId": "60abda18-31a2-43db-9632-c9030d0268d1",
+		"enabled": true
+	},
+	"cli": {
+		"packageManager": "npm"
+	},
+	"feedback": {
+		"firstCheckDate": 1672251732891
+	}
+}

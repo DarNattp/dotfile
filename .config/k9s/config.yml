@@ -1,0 +1,54 @@
+k9s:
+  refreshRate: 2
+  maxConnRetry: 5
+  enableMouse: false
+  headless: false
+  logoless: false
+  crumbsless: false
+  readOnly: false
+  noExitOnCtrlC: false
+  noIcons: false
+  skipLatestRevCheck: false
+  logger:
+    tail: 100
+    buffer: 5000
+    sinceSeconds: 300
+    fullScreenLogs: false
+    textWrap: false
+    showTime: false
+  currentContext: gke_gke-app-376315_asia-southeast1-a_gke-app
+  currentCluster: gke_gke-app-376315_asia-southeast1-a_gke-app
+  clusters:
+    gke_gke-app-376315_asia-southeast1-a_gke-app:
+      namespace:
+        active: elastic
+        lockFavorites: false
+        favorites:
+        - todo-app
+        - traefik
+        - all
+        - elastic
+        - argocd
+        - default
+      view:
+        active: pods
+      featureGates:
+        nodeShell: false
+      shellPod:
+        image: busybox:1.35.0
+        command: []
+        args: []
+        namespace: default
+        limits:
+          cpu: 100m
+          memory: 100Mi
+        labels: {}
+      portForwardAddress: localhost
+  thresholds:
+    cpu:
+      critical: 90
+      warn: 70
+    memory:
+      critical: 90
+      warn: 70
+  screenDumpDir: /tmp/k9s-screens-dar

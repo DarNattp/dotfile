@@ -1,0 +1,20 @@
+2023-02-22 23:05:55,813 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
+2023-02-22 23:05:55,815 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters', 'get_credentials']
+2023-02-22 23:05:55,867 DEBUG    root            Running [gcloud.container.clusters.get-credentials] with arguments: [--project: "gke-app-376315", --zone: "asia-southeast1-a", NAME: "gke-app"]
+2023-02-22 23:05:55,871 INFO     ___FILE_ONLY___ Fetching cluster endpoint and auth data.
+
+2023-02-22 23:05:55,873 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-02-22 23:05:56,060 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/gke-app-376315/locations/asia-southeast1-a/clusters/gke-app?alt=json HTTP/1.1" 200 None
+2023-02-22 23:05:56,137 DEBUG    root            Saved kubeconfig to /home/dar/.kube/config
+2023-02-22 23:05:56,137 INFO     ___FILE_ONLY___ kubeconfig entry generated for gke-app.
+
+2023-02-22 23:05:56,137 DEBUG    root            Chosen display Format:default
+2023-02-22 23:05:56,138 INFO     root            Display format: "default"
+2023-02-22 23:05:56,138 INFO     ___FILE_ONLY___ 
+
+Updates are available for some Google Cloud CLI components.  To install them,
+please run:
+  $ gcloud components update
+
+
+2023-02-22 23:05:56,142 DEBUG    root            Metrics reporting process started...

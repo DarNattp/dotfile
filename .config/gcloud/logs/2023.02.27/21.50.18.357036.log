@@ -1,0 +1,40 @@
+2023-02-27 21:50:18,358 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2023-02-27 21:50:18,360 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'config_helper']
+2023-02-27 21:50:18,361 DEBUG    root            Running [gcloud.config.config-helper] with arguments: [--format: "json"]
+2023-02-27 21:50:18,387 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2023-02-27 21:50:18,389 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2023-02-27 21:50:18,546 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2023-02-27 21:50:18,557 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): www.gstatic.com:443
+2023-02-27 21:50:18,674 DEBUG    urllib3.connectionpool https://www.gstatic.com:443 "GET /cloudsdk/feature_flag_config_file.yaml HTTP/1.1" 200 101
+2023-02-27 21:50:18,679 DEBUG    root            Chosen display Format:default json
+2023-02-27 21:50:18,680 INFO     root            Display format: "default json"
+2023-02-27 21:50:18,680 INFO     ___FILE_ONLY___ {
+  "configuration": {
+    "active_configuration": "default",
+    "properties": {
+      "compute": {
+        "region": "asia-southeast1",
+        "zone": "asia-southeast1-a"
+      },
+      "core": {
+        "account": "natapat.pims@gmail.com",
+        "disable_usage_reporting": "False",
+        "project": "gke-app-376315"
+      }
+    }
+  },
+  "credential": {
+    "access_token": "ya29.a0AVvZVsq5lyzkiCUa4cKZNS9XrPNk48hDjT6UWSmrcW3yzAEcL8yNms1amTqbRhKY9K6xINm1rcUGWge-UR0MVyb9qgFwPIlKfxwtmfx07gLmYzr7_eY6M3_6tYPN-q-gBpi61dPW5HhPb5OwbkZKjkU-bO1TfpPd7mSFPWEaCgYKAYgSAQASFQGbdwaItqu9M2VGnFHgkU6SHy-Rhg0174",
+    "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImQyNWY4ZGJjZjk3ZGM3ZWM0MDFmMDE3MWZiNmU2YmRhOWVkOWU3OTIiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzMjU1NTk0MDU1OS5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImF1ZCI6IjMyNTU1OTQwNTU5LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTE1ODQ3Mjk4NjgyNTQ2MDY3OTk2IiwiZW1haWwiOiJuYXRhcGF0LnBpbXNAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJJNmdxdkZoaXlpVzhfaEFHeVMwVWF3IiwiaWF0IjoxNjc3NTA5NDE4LCJleHAiOjE2Nzc1MTMwMTh9.qq9HWNZLCHlDNj6Izp1Sgyp7JDGssGrDN56j-4CAZBUgq_11NIe2U9Fd_MMqXX9-8MQLfsH9YXxENBLcSaPVJxH6Npeg3UfjVAL8lCtCNVHUKSP5da_GnRiboXOn5hnjfPhTgaYYOfEQd3_0pvD7_oqUBQCcUKdnp8POvkZOTWTEIstlfcN3MojzL3WI_9--hvqVjodeC0UWi77P69bfIKFxEQ7D_rcJEPmHEAjkFS7v411dnxE2NjYYlHKPXsRr9hraHa8A__XLZ6DJO3T-y2Racgl3ujXxQNGdNLdin-hVZMPoH9EBEg6zbq719MuEmTSjD0KITydwZ1mf9xOx1g",
+    "token_expiry": "2023-02-27T15:50:17Z"
+  },
+  "sentinels": {
+    "config_sentinel": "/home/dar/.config/gcloud/config_sentinel"
+  }
+}
+2023-02-27 21:50:18,680 INFO     ___FILE_ONLY___ 
+
+2023-02-27 21:50:18,681 DEBUG    root            Checking for updates...
+2023-02-27 21:50:18,683 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2023-02-27 21:50:18,815 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-2.json HTTP/1.1" 200 206156
+2023-02-27 21:50:18,976 DEBUG    root            Metrics reporting process started...

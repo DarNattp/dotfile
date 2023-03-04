@@ -1,0 +1,12 @@
+2023-02-27 11:18:03,780 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2023-02-27 11:18:03,781 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'config_helper']
+2023-02-27 11:18:03,783 DEBUG    root            Running [gcloud.config.config-helper] with arguments: [--format: "json"]
+2023-02-27 11:18:03,785 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2023-02-27 11:18:03,786 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2023-02-27 11:18:03,948 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2023-02-27 11:18:03,958 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): www.gstatic.com:443
+2023-02-27 11:20:55,137 INFO     ___FILE_ONLY___ 
+
+Command killed by keyboard interrupt
+
+

@@ -1,0 +1,34 @@
+2023-02-24 20:31:57,956 DEBUG    root            Running [gcloud] with arguments: [-v: "None"]
+2023-02-24 20:31:57,956 DEBUG    root            Loaded Command Group: ['gcloud', 'version']
+2023-02-24 20:31:57,957 DEBUG    root            Running [gcloud.version] with arguments: []
+2023-02-24 20:31:57,975 DEBUG    root            Chosen display Format:flattened[no-pad,separator=" "]
+2023-02-24 20:31:57,976 INFO     root            Display format: "flattened[no-pad,separator=" "]"
+2023-02-24 20:31:57,976 INFO     ___FILE_ONLY___ Google Cloud SDK
+2023-02-24 20:31:57,976 INFO     ___FILE_ONLY___  
+2023-02-24 20:31:57,976 INFO     ___FILE_ONLY___ 419.0.0
+
+2023-02-24 20:31:57,976 INFO     ___FILE_ONLY___ bq
+2023-02-24 20:31:57,976 INFO     ___FILE_ONLY___  
+2023-02-24 20:31:57,976 INFO     ___FILE_ONLY___ 2.0.85
+
+2023-02-24 20:31:57,976 INFO     ___FILE_ONLY___ bundled-python3-unix
+2023-02-24 20:31:57,976 INFO     ___FILE_ONLY___  
+2023-02-24 20:31:57,976 INFO     ___FILE_ONLY___ 3.9.16
+
+2023-02-24 20:31:57,977 INFO     ___FILE_ONLY___ core
+2023-02-24 20:31:57,977 INFO     ___FILE_ONLY___  
+2023-02-24 20:31:57,977 INFO     ___FILE_ONLY___ 2023.02.17
+
+2023-02-24 20:31:57,977 INFO     ___FILE_ONLY___ gcloud-crc32c
+2023-02-24 20:31:57,977 INFO     ___FILE_ONLY___  
+2023-02-24 20:31:57,977 INFO     ___FILE_ONLY___ 1.0.0
+
+2023-02-24 20:31:57,977 INFO     ___FILE_ONLY___ gke-gcloud-auth-plugin
+2023-02-24 20:31:57,977 INFO     ___FILE_ONLY___  
+2023-02-24 20:31:57,977 INFO     ___FILE_ONLY___ 0.4.0
+
+2023-02-24 20:31:57,977 INFO     ___FILE_ONLY___ gsutil
+2023-02-24 20:31:57,977 INFO     ___FILE_ONLY___  
+2023-02-24 20:31:57,977 INFO     ___FILE_ONLY___ 5.20
+
+2023-02-24 20:31:57,981 DEBUG    root            Metrics reporting process started...

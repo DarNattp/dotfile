@@ -1,0 +1,45 @@
+2023-02-09 23:13:52,511 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
+2023-02-09 23:13:52,513 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters', 'resize']
+2023-02-09 23:13:52,539 DEBUG    root            Running [gcloud.container.clusters.resize] with arguments: [--node-pool: "gke-app-pool-1", --num-nodes: "0", NAME: "gke-app"]
+2023-02-09 23:13:52,542 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-02-09 23:13:52,725 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/gke-app-376315/locations/asia-southeast1-a/clusters/gke-app?alt=json HTTP/1.1" 404 None
+2023-02-09 23:13:52,728 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-02-09 23:13:53,227 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/gke-app-376315/locations/-/clusters?alt=json HTTP/1.1" 200 None
+2023-02-09 23:13:53,233 WARNING  root            Problem loading details of cluster to resize:
+
+ResponseError: code=404, message=Not found: projects/gke-app-376315/zones/asia-southeast1-a/clusters/gke-app.
+Could not find [gke-app] in [asia-southeast1-a].
+Did you mean [gke-app] in [asia-southeast1-b]?
+
+You can still attempt to resize the cluster.
+
+2023-02-09 23:13:55,996 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-02-09 23:13:56,145 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "POST /v1/projects/gke-app-376315/locations/asia-southeast1-a/clusters/gke-app/nodePools/gke-app-pool-1:setSize?alt=json HTTP/1.1" 404 None
+2023-02-09 23:13:56,148 DEBUG    root            (gcloud.container.clusters.resize) NOT_FOUND: Not found: projects/gke-app-376315/zones/asia-southeast1-a/clusters/gke-app.
+Traceback (most recent call last):
+  File "/tmp/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/tmp/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 807, in Run
+    resources = command_instance.Run(args)
+  File "/tmp/google-cloud-sdk/lib/surface/container/clusters/resize.py", line 100, in Run
+    op_ref = adapter.ResizeNodePool(cluster_ref, pool_name, args.num_nodes)
+  File "/tmp/google-cloud-sdk/lib/googlecloudsdk/api_lib/container/api_adapter.py", line 3973, in ResizeNodePool
+    operation = self.client.projects_locations_clusters_nodePools.SetSize(req)
+  File "/tmp/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/container/v1/container_v1_client.py", line 338, in SetSize
+    return self._RunMethod(
+  File "/tmp/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 737, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+  File "/tmp/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 743, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+  File "/tmp/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 609, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+apitools.base.py.exceptions.HttpNotFoundError: HttpError accessing <https://container.googleapis.com/v1/projects/gke-app-376315/locations/asia-southeast1-a/clusters/gke-app/nodePools/gke-app-pool-1:setSize?alt=json>: response: <{'vary': 'Origin, X-Origin, Referer', 'content-type': 'application/json; charset=UTF-8', 'content-encoding': 'gzip', 'date': 'Thu, 09 Feb 2023 16:13:56 GMT', 'server': 'ESF', 'cache-control': 'private', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked', 'status': 404}>, content <{
+  "error": {
+    "code": 404,
+    "message": "Not found: projects/gke-app-376315/zones/asia-southeast1-a/clusters/gke-app.",
+    "status": "NOT_FOUND"
+  }
+}
+>
+2023-02-09 23:13:56,163 ERROR    root            (gcloud.container.clusters.resize) NOT_FOUND: Not found: projects/gke-app-376315/zones/asia-southeast1-a/clusters/gke-app.
+2023-02-09 23:13:56,174 DEBUG    root            Metrics reporting process started...
